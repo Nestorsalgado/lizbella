@@ -1,0 +1,33 @@
+name: Construir imagen Docker
+
+# Se ejecuta en cada push a main (si cambia algo de la web o el Dockerfile)
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  construir:
+    name: Build de la imagen Liz-Bella
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Descargar el código del repo al runner
+      - name: Descargar código
+        uses: actions/checkout@v5
+
+      # 2. Preparar Buildx (el constructor moderno de imágenes)
+      - name: Configurar Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 3. Construir la imagen a partir del Dockerfile de la web
+      - name: Construir la imagen
+        uses: docker/build-push-action@v6
+        with:
+          context: ./lizbella          # carpeta donde está el Dockerfile
+          push: false                  # de momento NO la subimos, solo construimos
+          tags: lizbella:latest        # nombre:tag de la imagen
+
+      # 4. Mensaje final
+      - name: Resultado
+        run: echo "La imagen se construyó correctamente"
