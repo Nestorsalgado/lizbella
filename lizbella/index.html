@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liz-Bella · Renta de Cabinas de Fotos, Barras y más para tu Fiesta</title>
+    <meta name="description" content="Liz-Bella: renta de cabinas de fotos, barras de todo tipo, espejos personalizados, brincolines, bocinas y más para hacer inolvidable tu evento.">
+    <meta name="theme-color" content="#7b2ff7">
+
+    <!-- Open Graph (vista previa al compartir en redes/WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Liz-Bella · Renta de servicios para fiestas y eventos">
+    <meta property="og:description" content="Cabinas de fotos, barras, espejos personalizados, brincolines, bocinas y más. Nosotros ponemos la diversión.">
+    <meta property="og:image" content="assets/img/og-cover.jpg">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="bi bi-stars"></i> Liz-Bella
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#como-funciona">Cómo funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#paquetes">Paquetes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Opiniones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-fx btn-sm px-3" href="#contacto">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="inicio">
+        <div class="container text-center">
+            <span class="badge rounded-pill bg-light text-dark mb-3 px-3 py-2">
+                <i class="bi bi-balloon-heart-fill text-danger"></i> Fiestas inolvidables
+            </span>
+            <h1 class="display-3 fw-bold mb-3">Hacemos de tu evento algo <span class="text-gradient">inolvidable</span></h1>
+            <p class="lead mx-auto mb-4" style="max-width: 640px;">
+                Renta de cabinas de fotos, barras de todo tipo, espejos personalizados,
+                brincolines, bocinas y más. Nosotros ponemos la diversión.
+            </p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="#contacto" class="btn btn-fx btn-lg px-4"><i class="bi bi-calendar-check"></i> Reserva tu evento</a>
+                <a href="#servicios" class="btn btn-outline-light btn-lg px-4">Ver servicios</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATS -->
+    <section class="bg-white py-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-gradient mb-0">+500</h2>
+                    <p class="text-muted mb-0">Eventos realizados</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-gradient mb-0">+10</h2>
+                    <p class="text-muted mb-0">Servicios disponibles</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-gradient mb-0">98%</h2>
+                    <p class="text-muted mb-0">Clientes felices</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2 class="fw-bold text-gradient mb-0">24/7</h2>
+                    <p class="text-muted mb-0">Atención</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestros <span class="text-gradient">servicios</span></h2>
+                <p class="text-muted">Todo lo que necesitas para una celebración perfecta</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-camera-fill"></i></div>
+                        <h5 class="fw-bold">Cabinas de fotos</h5>
+                        <p class="text-muted mb-0">Cabinas con props, impresión al instante y recuerdos para todos tus invitados.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-cup-straw"></i></div>
+                        <h5 class="fw-bold">Barras de todo tipo</h5>
+                        <p class="text-muted mb-0">Barra de bebidas, cócteles, café, snacks y más, montadas y atendidas por nosotros.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-phone-vibrate-fill"></i></div>
+                        <h5 class="fw-bold">Espejos personalizados</h5>
+                        <p class="text-muted mb-0">Espejo mágico interactivo con diseño personalizado para tu evento.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-balloon-fill"></i></div>
+                        <h5 class="fw-bold">Brincolines</h5>
+                        <p class="text-muted mb-0">Inflables y brincolines de varios tamaños para la diversión de los más pequeños.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-speaker-fill"></i></div>
+                        <h5 class="fw-bold">Bocinas y audio</h5>
+                        <p class="text-muted mb-0">Equipo de sonido y bocinas potentes para que la música nunca falte.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card h-100 shadow-sm text-center p-4">
+                        <div class="service-icon"><i class="bi bi-stars"></i></div>
+                        <h5 class="fw-bold">Y mucho más</h5>
+                        <p class="text-muted mb-0">Mobiliario, iluminación y detalles para completar tu evento. Pregúntanos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section id="como-funciona" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">¿Cómo <span class="text-gradient">funciona</span>?</h2>
+                <p class="text-muted">Reservar con Liz-Bella es muy sencillo</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-bold mt-3">Elige tu servicio</h5>
+                        <p class="text-muted mb-0">Dinos qué necesitas: cabina, barra, espejo, brincolín, audio o un paquete.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-bold mt-3">Cotiza sin costo</h5>
+                        <p class="text-muted mb-0">Te enviamos un presupuesto a la medida de tu evento y fecha.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-bold mt-3">Aparta tu fecha</h5>
+                        <p class="text-muted mb-0">Confirmas con un anticipo y aseguramos tu día en la agenda.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="step-card text-center h-100">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-bold mt-3">¡A disfrutar!</h5>
+                        <p class="text-muted mb-0">Llegamos, instalamos y operamos todo. Tú solo disfruta la fiesta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAQUETES -->
+    <section id="paquetes" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Nuestros <span class="text-gradient">paquetes</span></h2>
+                <p class="text-muted">Combina servicios y ahorra. Precios de referencia, personalizables.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <h5 class="fw-bold">Básico</h5>
+                            <p class="text-muted">Ideal para reuniones pequeñas</p>
+                            <div class="my-3">
+                                <span class="display-6 fw-bold text-gradient">$2,500</span>
+                                <span class="text-muted d-block small">MXN / evento</span>
+                            </div>
+                            <ul class="list-unstyled text-start flex-grow-1">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Cabina de fotos (3 h)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Props y accesorios</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Impresiones ilimitadas</li>
+                                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i> Barra</li>
+                                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i> Audio</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline-dark mt-3">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow border-0 position-relative">
+                        <span class="badge btn-fx position-absolute top-0 start-50 translate-middle px-3 py-2">Más popular</span>
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <h5 class="fw-bold">Fiesta</h5>
+                            <p class="text-muted">El favorito para cumpleaños</p>
+                            <div class="my-3">
+                                <span class="display-6 fw-bold text-gradient">$4,900</span>
+                                <span class="text-muted d-block small">MXN / evento</span>
+                            </div>
+                            <ul class="list-unstyled text-start flex-grow-1">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Cabina de fotos (4 h)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Espejo personalizado</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Barra de snacks</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Bocinas y audio</li>
+                                <li class="mb-2 text-muted"><i class="bi bi-x-circle me-2"></i> Brincolín</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-fx mt-3">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 text-center d-flex flex-column">
+                            <h5 class="fw-bold">Premium</h5>
+                            <p class="text-muted">Todo incluido para grandes eventos</p>
+                            <div class="my-3">
+                                <span class="display-6 fw-bold text-gradient">$8,900</span>
+                                <span class="text-muted d-block small">MXN / evento</span>
+                            </div>
+                            <ul class="list-unstyled text-start flex-grow-1">
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Cabina de fotos (6 h)</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Espejo personalizado</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Barra completa</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Brincolín</li>
+                                <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i> Audio e iluminación</li>
+                            </ul>
+                            <a href="#contacto" class="btn btn-outline-dark mt-3">Cotizar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-muted small mt-4 mb-0">
+                * Precios de referencia. El costo final depende de duración, ubicación y servicios elegidos.
+            </p>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Galería de <span class="text-gradient">eventos</span></h2>
+                <p class="text-muted">Algunos de los momentos que hemos creado</p>
+            </div>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 1"
+                         src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=600&q=70">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 2"
+                         src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=70">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 3"
+                         src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=70">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 4"
+                         src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=600&q=70">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 5"
+                         src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=70">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img class="gallery-img" alt="Fiesta 6"
+                         src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=600&q=70">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Lo que dicen nuestros <span class="text-gradient">clientes</span></h2>
+                <p class="text-muted">La mejor fiesta es la que todos recuerdan</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-3">"La cabina de fotos fue el hit de la boda. Todos se llevaron su recuerdo y el servicio impecable."</p>
+                            <div class="d-flex align-items-center">
+                                <span class="avatar-initial">M</span>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold">Mariana G.</h6>
+                                    <small class="text-muted">Boda · CDMX</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="mb-3">"Contratamos el espejo y el brincolín para el cumple de mi hija. Puntuales y súper atentos."</p>
+                            <div class="d-flex align-items-center">
+                                <span class="avatar-initial">J</span>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold">Jorge R.</h6>
+                                    <small class="text-muted">Cumpleaños · Edomex</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <div class="text-warning mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                            </div>
+                            <p class="mb-3">"La barra y las bocinas elevaron el ambiente de nuestra posada de empresa. ¡Repetiremos!"</p>
+                            <div class="d-flex align-items-center">
+                                <span class="avatar-initial">A</span>
+                                <div class="ms-3">
+                                    <h6 class="mb-0 fw-bold">Ana L.</h6>
+                                    <small class="text-muted">Evento corporativo</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Preguntas <span class="text-gradient">frecuentes</span></h2>
+                <p class="text-muted">Resolvemos las dudas más comunes</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    ¿Con cuánta anticipación debo reservar?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Recomendamos apartar tu fecha con al menos 2 a 4 semanas de anticipación, sobre todo en temporada alta (fin de año y graduaciones).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    ¿Ustedes instalan y operan los equipos?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Sí. Nos encargamos del montaje, la operación durante el evento y el desmontaje. Tú solo disfrutas.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    ¿A qué zonas dan servicio?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Cubrimos GDL y zona metropolitana. Para otras ubicaciones podemos cotizar con un cargo adicional por traslado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    ¿Cómo aparto mi fecha?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Con un anticipo confirmamos tu reserva. El resto se liquida el día del evento. Aceptamos transferencia y efectivo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold mb-3">¿Listo para <span class="text-gradient">celebrar</span>?</h2>
+                    <p class="text-muted">Cuéntanos tu idea y preparamos un presupuesto a tu medida sin compromiso.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="mb-3"><i class="bi bi-telephone-fill text-gradient me-2"></i> +52 33 11 08 17 08</li>
+                        <li class="mb-3"><i class="bi bi-envelope-fill text-gradient me-2"></i> nestore.salgado@outlook.com</li>
+                        <li class="mb-3"><i class="bi bi-whatsapp text-gradient me-2"></i> Escríbenos por WhatsApp</li>
+                    </ul>
+                </div>
+                <div class="col-lg-7">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Servicio de interés</label>
+                                        <select class="form-select">
+                                            <option>Cabina de fotos</option>
+                                            <option>Barra</option>
+                                            <option>Espejo personalizado</option>
+                                            <option>Brincolín</option>
+                                            <option>Bocinas y audio</option>
+                                            <option>Varios / Paquete</option>
+                                            <option>Otro</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Fecha</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Cuéntanos tu idea</label>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-fx btn-lg w-100">
+                                            <i class="bi bi-send"></i> Enviar solicitud
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <span class="fw-bold"><i class="bi bi-stars text-gradient"></i> Liz-Bella</span>
+                    <small class="d-block text-secondary">© 2026 Liz-Bella. Todos los derechos reservados.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-light fs-5 me-3" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light fs-5 me-3" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light fs-5 me-3" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="text-light fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/3311081708?text=Hola%20Liz-Bella,%20me%20interesa%20cotizar%20para%20mi%20evento"
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Botón volver arriba -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JavaScript propio -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+services:
+  lizbella:
+    image: nginx:latest
+    container_name: lizbella
+    ports:
+      - "8080:80"
+    volumes:
+      - ./lizbella:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+volumes:
+  portainer_data:
