@@ -21,7 +21,7 @@ jobs:
     steps:
       # Paso 1: descargar el código del repo al runner
       - name: Descargar el código
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # Paso 2: comprobar que index.html existe y no está vacío
       - name: Comprobar que index.html existe
