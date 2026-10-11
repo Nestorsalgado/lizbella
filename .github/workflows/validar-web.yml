@@ -1,0 +1,49 @@
+name: Validar web Liz-Bella
+
+# ---------------------------------------------------------------
+# TRIGGER: cuándo se ejecuta este workflow
+# ---------------------------------------------------------------
+on:
+  push:
+    branches: [ main ]        # cada push a la rama main
+  pull_request:
+    branches: [ main ]        # y en cada pull request hacia main
+  workflow_dispatch:          # permite lanzarlo a mano desde la web
+
+# ---------------------------------------------------------------
+# JOBS: los trabajos a ejecutar
+# ---------------------------------------------------------------
+jobs:
+  validar:
+    name: Validar archivos del proyecto
+    runs-on: ubuntu-latest    # el runner: una VM Linux que GitHub presta
+
+    steps:
+      # Paso 1: descargar el código del repo al runner
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      # Paso 2: comprobar que index.html existe y no está vacío
+      - name: Comprobar que index.html existe
+        run: |
+          if [ ! -s lizbella/index.html ]; then
+            echo "ERROR: lizbella/index.html no existe o está vacío"
+            exit 1
+          fi
+          echo "OK: index.html existe y tiene contenido"
+
+      # Paso 3: comprobar que el CSS y el JS existen
+      - name: Comprobar CSS y JS
+        run: |
+          test -f lizbella/css/styles.css && echo "OK: CSS encontrado"
+          test -f lizbella/js/main.js && echo "OK: JS encontrado"
+
+      # Paso 4: validar la sintaxis del docker-compose.yml
+      - name: Validar docker-compose.yml
+        run: |
+          docker compose -f docker-compose.yml config > /dev/null
+          echo "OK: docker-compose.yml tiene sintaxis válida"
+
+      # Paso 5: mensaje final
+      - name: Resultado
+        run: echo "Todas las validaciones pasaron correctamente"
